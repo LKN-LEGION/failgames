@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>IceLimer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html"><img class="logotip" src="img/logo.jpg" alt=""></a>
+  </div>
+
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="location.html">Location</a>
+      <a id="menu" href="#" class="icon">&#9776;</a>
+    </div>
+  </nav>
+</header>
+
+
+
+<main>
+  <center>    <h1>Расположение нашего офиса:</h1></center>
+  <div id="map">
+
+  </div>
+</main>
+
+
+<footer>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="location.html">Location</a>
+  </nav>
+  <div class="logo">
+    <a href="index.html"><img class="logotip" src="img/logo.jpg" alt=""></a>
+  </div>
+  <div class="social">
+    <a href="#"><img src="img/social_icons/em.png" alt=""></a>
+    <a href="#"><img src="img/social_icons/face.png" alt=""></a>
+    <a href="#"><img src="img/social_icons/goo.png" alt=""></a>
+    <a href="#"><img src="img/social_icons/inst.png" alt=""></a>
+    <a href="#"><img src="img/social_icons/pint.png" alt=""></a>
+  </div>
+  <p>Все права защинены<sup>&copy</sup>2018</p>
+</footer>
+
+
+<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1ASrScu9RBaAsKCbsYzhWppCHFhWnrLw&callback=initMap">
+    </script>
+
+<script src="js/script.js">
+
+</script>
+</body>
+</html>
